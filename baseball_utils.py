@@ -20,3 +20,12 @@ def to_numbers(text):
     for ch in text:
         nums.append(int(ch))
     return nums
+
+# [블록 4] 스트라이크: 숫자와 자리가 모두 같다
+def count_strike(answer, guess):
+    strike = 0
+    for i in range(3):
+        if guess[i] == answer[i]:
+            strike += 1
+    return strike
+
