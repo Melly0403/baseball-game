@@ -29,3 +29,11 @@ def count_strike(answer, guess):
             strike += 1
     return strike
 
+# [블록 5] 볼: 숫자는 있지만 자리가 다르다
+def count_ball(answer, guess):
+    ball = 0
+    for i in range(3):
+        if guess[i] != answer[i] and guess[i] in answer:
+            ball += 1
+    return ball
+
