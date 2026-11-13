@@ -37,3 +37,8 @@ def count_ball(answer, guess):
             ball += 1
     return ball
 
+# [블록 6] 판정 결과를 글자로 변환
+def result_text(strike, ball):
+    if strike == 0 and ball == 0:
+        return 'OUT'
+    return f'{strike}S {ball}B'
