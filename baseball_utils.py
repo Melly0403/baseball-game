@@ -13,3 +13,10 @@ def check_input(text):
     if len(set(text)) != 3:
         return '서로 다른 숫자 3개를 입력하세요.'
     return ""
+
+# [블록 3] 문자열 '381'을 리스트 [3, 8, 1]로 변환
+def to_numbers(text):
+    nums = []
+    for ch in text:
+        nums.append(int(ch))
+    return nums
